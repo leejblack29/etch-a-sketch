@@ -38,7 +38,15 @@ function deleteGrid() {
 
 function setRes() {
   const button = document.querySelector("button");
-  button.addEventListener("click", deleteGrid);
+  button.addEventListener("click", () => {
+    let newRes = +prompt("Set new resolution (100 or less!)");
+    if (newRes <= 100) {
+        deleteGrid();
+        generateGrid(newRes);
+    }
+
+  });
+
 }
 
 generateGrid(16);
