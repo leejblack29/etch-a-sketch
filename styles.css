@@ -1,7 +1,5 @@
 html, body, #grid {height: 100%;}
 
-div {border: 1px solid black;}
-
 .flex {display: flex;}
 
 .stretch {align-items: stretch;}
