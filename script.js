@@ -7,13 +7,19 @@ function createDiv(parent) {
     return newDiv;
 }
 
-function createColumns(n) {
+function generateGrid(n) {
+    // create n columns
     for (let i = 0; i < n; i++) {
-        createDiv(grid);
+        const thisColumn = createDiv(grid)
+
+        // populate each column with n divs
+        for (let j = 0; j < n; j++) {
+            createDiv(thisColumn);
+        }
     }
 }
 
-createColumns(16);
+generateGrid(16);
 
 
 
