@@ -8,7 +8,7 @@ div {border: 1px solid black;}
 
 .even {flex: 1;}
 
-.column { flex-direction: vertical;}
+.column { flex-direction: column;}
 
 
 
