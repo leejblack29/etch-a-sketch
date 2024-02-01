@@ -14,19 +14,23 @@ function generateGrid(n) {
 
         // populate each column with n divs
         for (let j = 0; j < n; j++) {
-            createDiv(thisColumn);
+            createDiv(thisColumn).classList.add("box");
         }
     }
 }
 
 function makeDrawable() {
     grid.addEventListener("mouseover", (event) => {
-        event.target.style.backgroundColor = "black";
+        const thisDiv = event.target;
+
+        if (thisDiv.classList.contains("box")) {
+            thisDiv.style.backgroundColor = "black";
+        }   
     } );
 
 }
 
-generateGrid(16);
+generateGrid(100);
 makeDrawable();
 
 
