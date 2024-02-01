@@ -7,11 +7,15 @@ function createDiv(parent) {
     return newDiv;
 }
 
-createDiv(grid);
-createDiv(grid);
-createDiv(grid);
-createDiv(grid);
-createDiv(grid);
+function createColumns(n) {
+    for (let i = 0; i < n; i++) {
+        createDiv(grid);
+    }
+}
+
+createColumns(16);
+
+
 
 
 
