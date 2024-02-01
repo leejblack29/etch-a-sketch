@@ -1,14 +1,17 @@
 const grid = document.querySelector("#grid");
 
-function createColumn() {
-    const newCol = document.createElement("div");
-    newCol.classList.add("flex", "even", "column");
-    grid.appendChild(newCol);
+function createDiv(parent) {
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("flex", "even", "column");
+    parent.appendChild(newDiv);
 }
 
-createColumn();
-createColumn();
-createColumn();
-createColumn();
-createColumn();
-createColumn();
+createDiv(grid);
+createDiv(grid);
+createDiv(grid);
+createDiv(grid);
+createDiv(grid);
+
+
+
+
