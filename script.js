@@ -19,7 +19,15 @@ function generateGrid(n) {
     }
 }
 
+function makeDrawable() {
+    grid.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = "black";
+    } );
+
+}
+
 generateGrid(16);
+makeDrawable();
 
 
 
